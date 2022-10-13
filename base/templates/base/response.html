@@ -1,0 +1,18 @@
+{% extends 'main.html'%}
+
+
+{% block content%}
+<div class="container">
+    <div class="col-md-10 offset-md-1 mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Booking Successful!</h1>
+            <p class="lead">Thank you for using our Website.</p>
+            <hr class="my-4">
+            <p class="lead">Go back to
+              <a class="btn btn-light btn-sm" href="{% url 'home' %}" role="button">Home</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

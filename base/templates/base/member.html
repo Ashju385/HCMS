@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+
+{% block content%}
+
+<br>
+<div class="row">
+    <div class="col-md">
+        <div class="card card-body">
+            <h5>Members List</h5>
+        </div>
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>House No</th>
+                </tr>
+                {% for i in members %}
+                <tr>
+                   <td>{{i.name}}</td> 
+                   <td>{{i.email}}</td>
+                   <td>{{i.house_num}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+    </div>
+</div>
+
+{% endblock %}
